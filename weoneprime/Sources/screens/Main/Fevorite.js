@@ -87,9 +87,9 @@ const Fevorite = () => {
       <Pressable style={styles.card}>
         <Image source={item.image} style={styles.image} />
         <LinearGradient
-          start={{ x: 0, y: 0.8 }}
-          end={{ x: 0, y: -1 }}
-          colors={["white", "transparent"]}
+          start={{ x: 0, y: 1.6 }}
+          end={{ x: 0, y: -0.5 }}
+          colors={["white", "white", "#ffffff2b", "transparent"]}
           style={styles.gradient}
         />
         <TouchableOpacity
@@ -97,9 +97,7 @@ const Fevorite = () => {
             ...RNStyles.center,
             height: wp(7),
             width: wp(7),
-            backgroundColor: isSelected
-              ? "rgba(222, 33, 39, 0.9)"
-              : "rgba(255, 255, 255, 0.35)",
+            backgroundColor: "rgba(255, 255, 255, 0.35)",
             position: "absolute",
             top: hp(1),
             borderRadius: 50,

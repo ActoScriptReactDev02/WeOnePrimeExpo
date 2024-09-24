@@ -38,6 +38,8 @@ const Images = {
   exclusive1: require(ImagePath + "exclusive1" + png),
   newlaunch1: require(ImagePath + "newlaunch1" + png),
   nodata: require(ImagePath + "nodata" + png),
+  scan: require(ImagePath + "scan" + png),
+  food: require(ImagePath + "food" + png),
 };
 
 export default Images;

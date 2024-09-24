@@ -7,7 +7,7 @@ import { RNHeader, RNText } from "../../common";
 import { Images } from "../../constants";
 import { Colors, FontFamily, FontSize, hp, wp } from "../../theme";
 import { LinearGradient } from "expo-linear-gradient";
-import { Image, StyleSheet, View } from "react-native";
+import { Image, Platform, StyleSheet, View } from "react-native";
 
 const Tab = createBottomTabNavigator();
 
@@ -50,7 +50,7 @@ const TabBar = () => {
               style={{
                 alignItems: "center",
                 justifyContent: "center",
-                top: hp(1.1),
+                top: Platform.OS === "ios" ? hp(1.1) : hp(-0.5),
               }}
             >
               <Image
@@ -77,6 +77,20 @@ const TabBar = () => {
             <RNHeader
               LeftIcon={Images.Weoneprime}
               RightIcon={Images.profile}
+              rightTitle={
+                <View style={{ marginRight: wp(3) }}>
+                  <RNText
+                    size={FontSize.font9}
+                    family={FontFamily.Medium}
+                    color={Colors.Grey}
+                  >
+                    Around You
+                  </RNText>
+                  <RNText size={FontSize.font12} family={FontFamily.SemiBold}>
+                    Rani Roy
+                  </RNText>
+                </View>
+              }
               containerStyle={{ paddingLeft: wp(14) }}
               rightIconStyle={{ width: wp(8), height: wp(8) }}
               leftIconStyle={{ width: wp(30) }}
@@ -134,7 +148,7 @@ const TabBar = () => {
               style={{
                 alignItems: "center",
                 justifyContent: "center",
-                top: hp(1.1),
+                top: Platform.OS === "ios" ? hp(1.1) : hp(-0.5),
               }}
             >
               <Image

@@ -1,13 +1,20 @@
 import React from "react";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
-import { Colors, FontFamily, FontSize, hp, wp } from "../theme";
+import { Colors, FontFamily, FontSize, hp, normalize, wp } from "../theme";
 import RNStyles from "./RNStyles";
 import RNText from "./RNText";
 import { LinearGradient } from "expo-linear-gradient";
 
-const RNButton = ({ title, style, textStyle, onPress, disable, gradientColors }) => {
+const RNButton = ({
+  title,
+  style,
+  textStyle,
+  onPress,
+  disable,
+  gradientColors,
+}) => {
   const renderButtonContent = () => (
-    <RNText style={[styles.buttonText, textStyle]}>{title}{" "}</RNText>
+    <RNText style={[styles.buttonText, textStyle]}>{title} </RNText>
   );
 
   return (
@@ -37,15 +44,15 @@ const RNButton = ({ title, style, textStyle, onPress, disable, gradientColors })
 
 const styles = StyleSheet.create({
   Container: {
-    borderRadius: wp(2), 
-    overflow: 'hidden',
+    borderRadius: wp(2),
+    overflow: "hidden",
   },
   gradient: {
     ...RNStyles.center,
     paddingVertical: hp(1.5),
     paddingHorizontal: wp(4),
-    marginVertical: hp(1),
-    borderRadius: wp(3),
+    // marginVertical: hp(1),
+    borderRadius: normalize(7),
   },
   solidBackground: {
     ...RNStyles.center,

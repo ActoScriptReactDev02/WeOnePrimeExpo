@@ -1,5 +1,11 @@
 import React from "react";
-import { Image, StyleSheet, TouchableOpacity, View } from "react-native";
+import {
+  Image,
+  StatusBar,
+  StyleSheet,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import {
   Colors,
@@ -15,6 +21,10 @@ import RNStyles from "./RNStyles";
 
 const RNHeader = ({
   title,
+  leftTitle,
+  rightTitle,
+  leftTitleStyle,
+  rightTitleStyle,
   onLeftPress,
   LeftIcon,
   onRightPress,
@@ -28,6 +38,8 @@ const RNHeader = ({
   const navigation = useNavigation();
   return (
     <View style={[styles.Container, containerStyle]}>
+      <StatusBar hidden={true} />
+      <RNText style={[leftTitleStyle]}>{leftTitle}</RNText>
       {LeftIcon ? (
         <TouchableOpacity
           onPress={() => (onLeftPress ? onLeftPress?.() : navigation.goBack())}
@@ -44,6 +56,7 @@ const RNHeader = ({
         <View style={styles.Left} />
       )}
       <RNText style={[styles.title, titleStyle]}>{title}</RNText>
+      <RNText style={[rightTitleStyle]}>{rightTitle}</RNText>
       {RightIcon ? (
         <TouchableOpacity onPress={onRightPress} style={styles.Right}>
           <Image

@@ -6,6 +6,7 @@ const Colors = {
   Green: "#2C9A16",
   Blue: "#0000FF",
   Yellow: "#FFFF00",
+  LightGrey: '#ECECEC',
   Grey: "#808080",
   DarkGrey: "#666666",
   Pink: "#FFC0CB",
