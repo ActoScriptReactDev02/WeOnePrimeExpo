@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "274641210203",
+    "project_id": "weoneprime",
+    "storage_bucket": "weoneprime.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274641210203:android:4b9a26b0b833f2ee13a87e",
+        "android_client_info": {
+          "package_name": "com.weoneprime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274641210203-9dq6liqkkhhvgi1ihtabcdqqf43nrv03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9iomRghSQ_kp40qMTyuQzv3zM76vHEKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274641210203-9dq6liqkkhhvgi1ihtabcdqqf43nrv03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

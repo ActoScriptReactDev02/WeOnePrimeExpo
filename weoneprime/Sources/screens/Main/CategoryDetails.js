@@ -24,6 +24,7 @@ export default function CategoryDetails() {
         { logo: Images.emp_logo, imageSource: Images.exploreimg },
         { logo: Images.emp_logo, imageSource: Images.exploreimg },
         { logo: Images.emp_logo, imageSource: Images.exploreimg },
+        { logo: Images.emp_logo, imageSource: Images.exploreimg },
       ],
     },
     {

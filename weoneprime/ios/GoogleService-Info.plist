@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>274641210203-cetf1d58ut3vtkef0cfhteo4epkb94jt.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.274641210203-cetf1d58ut3vtkef0cfhteo4epkb94jt</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>274641210203-ksr8n2q2bknj230gnv5b1t32bh83m374.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAdBF0Qj23g3AU0or6G52GqVU14RTnuu1M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>274641210203</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.weoneprime</string>
+	<key>PROJECT_ID</key>
+	<string>weoneprime</string>
+	<key>STORAGE_BUCKET</key>
+	<string>weoneprime.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:274641210203:ios:b4dbbf20fb811eee13a87e</string>
+</dict>
+</plist>

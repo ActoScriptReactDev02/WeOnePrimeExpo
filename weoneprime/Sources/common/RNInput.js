@@ -33,11 +33,13 @@ const RNInput = React.forwardRef((props, ref) => {
     spellCheck,
     toggleVisibility, 
     Icon, 
+    containerStyle,
+    iconstyle
   } = props;
 
   return (
-    <View style={styles.inputContainer}>
-      {Icon && <Image source={Icon} style={styles.icon} />}
+    <View style={[styles.inputContainer, containerStyle]}>
+      {Icon && <Image source={Icon} style={[styles.icon, iconstyle]} />}
       <TextInput
         ref={ref}
         editable={editable}

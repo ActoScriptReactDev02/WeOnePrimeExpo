@@ -1,6 +1,7 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { RegisterScreen, LoginScreen, ImageCarousel } from "../screens/Auth";
+import TabBar from "./BottomTabs";
 
 const Stack = createStackNavigator();
 
@@ -12,6 +13,7 @@ const AuthNavigation = ({ setAuth }) => {
         {(props) => <LoginScreen {...props} setAuth={setAuth} />} 
       </Stack.Screen>
       <Stack.Screen name="Register" component={RegisterScreen} />
+      <Stack.Screen name="Tab" component={TabBar} />
     </Stack.Navigator>
   );
 };

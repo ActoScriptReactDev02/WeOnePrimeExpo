@@ -12,6 +12,7 @@ import CategoryDetails from "../screens/Main/CategoryDetails";
 import { RNCommonHeader, RNHeader, RNText } from "../common";
 import { Images } from "../constants";
 import { View } from "react-native";
+import HomeScreen from "../screens/Ecommerce/HomeComponent/HomeScreen";
 
 const Stack = createStackNavigator();
 
@@ -24,6 +25,7 @@ const Routes = () => {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         {isAuth ? (
           <>
+            <Stack.Screen name="HomeScreen" component={HomeScreen} />
             <Stack.Screen
               name="CategoryDetails"
               component={CategoryDetails}
